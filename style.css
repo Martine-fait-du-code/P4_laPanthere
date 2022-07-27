@@ -80,21 +80,6 @@ a:hover {
   background: top no-repeat;
 }
 
-.bloc-bg-texture::before {
-  content: "";
-  background-size: 2px 2px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-.texture-paper::before {
-  background: url("img/texture-paper.png");
-  background-size: 280px 280px;
-}
-
 .b-parallax {
   background-attachment: fixed;
 }
@@ -122,16 +107,7 @@ a:hover {
 .d-bloc .a-btn,
 .d-bloc .navbar a,
 .d-bloc .navbar-brand
-/* .d-bloc a .icon-sm,
-.d-bloc a .icon-md,
-.d-bloc a .icon-lg,
-.d-bloc a .icon-xl
-/* .d-bloc h1 a, */
-/* .d-bloc h2 a,
-.d-bloc h3 a,
-.d-bloc h4 a,
-.d-bloc h5 a,
-.d-bloc h6 a */ {
+{
   color: #000000;
 }
 
@@ -664,9 +640,6 @@ a {
   font-size: 38px;
 }
 
-.hero-bloc-text-sub {
-  font-size: 36px;
-}
 
 .statement-bloc-text {
   line-height: 26px;
@@ -700,19 +673,16 @@ p {
 
 .tight-width-whitespace {
   width: 80%;
-  margin: auto; 
+  margin: auto;
 }
 
-.black-background .tc-white{
-font-size: 25px;
+.black-background .tc-white {
+  font-size: 25px;
 }
 
-.black-background .white{
-    font-size: 18px;
+.black-background .white {
+  font-size: 18px;
 }
-  
-
-
 
 .cta-hero {
   margin-top: 22px;
@@ -728,17 +698,17 @@ font-size: 25px;
   margin: auto auto auto auto;
 }
 
-h2 {   
+h2 {
   font-size: 22px;
   line-height: 1.4em;
   text-align: center;
 }
 
-h3{
-    width: 50%;
+h3 {
+  width: 50%;
   text-align: center;
   font-size: 22px;
-  margin: auto;  
+  margin: auto;
 }
 
 h4 {
@@ -754,13 +724,15 @@ h4 {
   box-shadow: 0px 0px 0px #000000;
 }
 
-h1 {
-  color: #333333 !important;
+
+ h5{
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    font-size: 30px;
 }
 
-h4 {
-  color: #333333 !important;
-}
+
 
 .icons {
   margin-bottom: 14px;
@@ -774,6 +746,7 @@ h4 {
 .portfolio-thumb {
   margin-bottom: 24px;
   width: 100%;
+  margin-top: 30px;
 }
 
 .portfolio-row {
@@ -798,10 +771,10 @@ h4 {
 .bgc-white {
   background-color: #ffffff;
 }
-
+ 
 .bgc-dark-slate-blue {
   background-color: #364577;
-}
+} 
 
 .bgc-atomic-tangerine {
   background-color: #f3976c;
@@ -809,7 +782,12 @@ h4 {
 
 .tc-white {
   color: #f3976c !important ;
+  font-weight: bold;
+  font-size: 30px;
 }
+
+
+
 
 .btn-atomic-tangerine {
   background: #f3976c;
@@ -1076,10 +1054,15 @@ footer .white {
   .container .bloc-lg img {
     width: 75%;
   }
+
 }
 
 @media (max-width: 767px) {
   .bloc-mob-center-text {
     text-align: center;
   }
+    .portfolio-row {
+  margin-bottom: 0;
+  margin-top: 0;
+}
 }
