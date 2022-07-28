@@ -155,7 +155,8 @@ select {
 button,
 html input[type=button],
 input[type=reset],
-input[type=submit] {
+input[type=submit]
+ {
     -webkit-appearance: button;
     cursor: pointer
 }
